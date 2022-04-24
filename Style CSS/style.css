@@ -1,0 +1,768 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+}
+
+/*menu đầu */
+.main{
+    overflow: hidden;
+}
+.header{ 
+
+}
+/*EL & Hotline*/
+.header .top{ 
+    background-color: #373737;
+    font-size: 13px;
+    height: 20px;
+    padding-top: 5px;
+}
+.header .top .selecter_left{
+    display: inline;
+    color: white ;
+}
+.header .top .selecter_left img{
+    margin-left: 120px;
+    width: 16px;
+    float: left;
+}
+.header .top .selecter_left a{
+    text-decoration: none;
+    color: white ;
+    padding-left: 5px;
+}
+.header .top .selecter_right{
+    float: right;
+    margin-right: 200px;
+}
+.header .top .selecter_right li{
+    float: left;
+    margin-right: 25px;
+    list-style-type: none;
+}
+.header .top .selecter_right a{
+    color: white;
+    text-decoration: none;
+}
+/* ombo menu run  */
+.header .menu{
+    transition: 0.3s;
+}
+.header .beetwen .nutnutmenu{
+    color: white;
+    position: absolute;
+    /* position: fixed; */
+    z-index: 3;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+.header .beetwen .user_menu{
+    color: white;
+    position: absolute;
+    display: inline-block;
+    margin: 20px;
+    right: 0;
+    padding: 10px;
+    font-size: 30px;
+    visibility: hidden;
+}
+/*Search & Login*/
+.header .beetwen{
+    background-color: #151515;
+    height: 100px;
+}
+.header .beetwen .beetwen_left {
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    width: 100px;
+    font-size: 32px;
+    margin-left: 150px;
+    float: left;
+}
+.header .beetwen .beetwen_left a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header .beetwen .beetwen_center{
+    position: relative;
+    float: left;
+    margin-left: 100px;
+    width: 500px;
+    height: 30px;
+    margin-top: 20px;
+    color: white;
+    margin-top: 30px;
+}
+.header .beetwen .beetwen_center input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 15px;
+    color: white;
+    background-color: #444;
+}
+.header .beetwen .beetwen_center button{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    border: none;
+    background-color: #444;
+    border-radius: 15px;
+}
+.header .beetwen .beetwen_center i {
+    color: white;
+}
+/* Dang kí - Dang nhập  */
+.header .beetwen .beetwen_right{
+    float: right;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+.header .beetwen .beetwen_right li{
+    float: left;
+    color: rgba(255, 255, 255, 0.151);
+    margin-right: 10px;
+    list-style-type: none;
+}
+.header .beetwen .beetwen_right a{
+    text-decoration: none;
+    color: #FFFFFFCC;
+}
+.header .beetwen .beetwen_right li a:hover{
+    color: #ffffffed !important;
+    /* color: blue; */
+}
+.header .beetwen .beetwen_right .bx-cart{
+    font-size: 25px;
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+/* Menu  */
+.header {}
+
+.header .last {
+  background-color: #f6851f;
+  height: 40px;
+  padding: 10px 130px;
+  z-index: 10;
+}
+
+.header .dong_last {
+  /* display: flex; */
+  /* display: block; */
+}
+
+.header .last .last_to {
+  float: left;
+  /* text-decoration: none; */
+  list-style-type: none;
+  margin: 5px 15px;
+}
+
+.header .last .last_to:hover .td_con {
+  /* visibility: visible; */
+  display: block;
+}
+
+.header .last .last_to p {
+  float: left;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(124, 122, 117, 0.9);
+}
+
+.header .last .td_cha:hover {
+  background-color: red;
+  transition: all 0.5s;
+}
+
+.header .last .td_cha i {
+  font-size: 22px;
+  z-index: 1;
+  display: block;
+  margin: 0 0 0 5px;
+  float: right;
+}
+
+.header .last .td_con {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.header .last .td_con {
+  list-style-type: none;
+  position: fixed;
+  z-index: 10;
+  background-color: #dddddd;
+  border-radius: 20px;
+  margin: 50px 0;
+  padding: 0 10px 10px;
+}
+
+.header .last .td_con li {
+  display: block;
+  /* color: #777777; */
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(95, 167, 177, 0.9);
+  margin-top: 10px;
+}
+
+.header .last .td_con:hover {
+  background-color: #f7f1e3;
+}
+
+.header .last .td_con li:hover {
+  transition: all 0.2s;
+  box-shadow: 2px 5px 10px rgba(49, 219, 241, 0.9);
+}
+
+.header .last .td_con li a {
+  text-decoration: none;
+  color: #777777;
+  display: block;
+}
+/* ghim menu  */
+.menu.doimenu
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
+}
+
+/* thiết lập style cho slideshow container */
+.slider{
+    
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+ /* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+    display: none;
+}
+ /* thiết kế nút mũi tên*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+ /* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+ /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+ /* Thiết lập style cho số hiển thị của phần tử */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+ /* thiết lập style  nút tròn điều khiển*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active, .dot:hover {
+    background-color: #717171;
+  }
+ /* tạo hiệu ứng chuyển động fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+ @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+ /* Hỗ trợ thông tin & giao hàng  */
+.thongtin{
+    background-color: #f6f6f6;
+    height: 100px;
+    margin-top: 10px;
+ }
+.thongtin .thongtinht{
+     float: left;
+     width: 350px;
+     padding-top: 10px;
+     margin-left: 10px;   
+     border-color: #dddddd;
+     border-left-style: dashed ;
+ }
+.thongtin .thongtinht img{
+    float: left;
+    margin-left: 10px;
+}
+.thongtin .thongtinht .canht{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.thongtin .thongtinht h3 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Sản phẩm  */
+.foodter{ 
+    display: inline-block;
+}
+.foodter h2{ 
+    color: #555;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    margin: 30px 0 10px 150px;
+    display: inline-block;
+} 
+.foodter .baokhoi{  
+    margin: 0 120px;
+}
+.foodter .baokhoi .khoi{
+    width: 190px;
+    height: 360px;
+    float: left;
+    margin: 20px 32px;
+    box-shadow: 0 3px 10px 3px #717171 ;
+}
+.foodter .baokhoi .khoi img{
+    width: 100%;
+}
+.foodter .baokhoi .khoi .khoiduoi{
+    
+}
+.foodter .baokhoi .khoi .khoiduoi h3{
+    text-align: center;
+    margin: 5px 5px 10px 5px;
+    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: #777777;
+}
+.foodter .baokhoi .khoi .khoiduoi .thsp .sps{
+    font-size: 16px;
+    height: 60px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    padding: 0 5px;
+    color: #334862;
+}
+.foodter .baokhoi .khoi .khoiduoi .thsp .gia p{
+    color: #000 ;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.foodter .baokhoi .khoi .khoitren:hover{
+    cursor: pointer;
+}
+.foodter .baokhoi .khoi .khoiduoi .thsp .sps:hover {
+    cursor: pointer;
+    color: #151515;
+}
+
+ /* Kết thúc - liên hệ  */
+.good{
+
+}
+.good .goodone{
+    background-color: #000000;
+    height: 400px;
+    color: #777777;
+}
+.good .goodone .onetop{
+    float: left;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.good .goodone .onetop li{
+    list-style-type: none;
+    margin:20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.good .goodone .onetop li span {
+    color:#ff6600 ;
+}
+/* .good .goodone .onemid{
+    float: left;
+    margin-top: 30px;
+    width: 300px;
+    height: 60px;
+    background-color: rebeccapurple;
+} */
+.good .goodone .oneright{
+    float: right;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+.good .goodone .oneright h4{
+    font-size: 19px;
+}
+.good .goodone .oneright li {
+    list-style-type: none;
+    margin:20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Good to  */
+.good .goodto{
+  height: 80px;
+}
+.good .goodto h4{
+    margin: 30px 0 30px 160px  ;
+    float: left;
+    color: #777777;
+}
+.good .goodto li{
+    float: left;
+    list-style-type: none;
+    margin: 30px 10px;     
+}
+.good .goodto a {
+    text-decoration: none;
+    color: #334862;
+    font-size: 16px;
+}
+.good .goodto a:hover {
+    color: #292929;
+}
+
+/* Good toto  */
+.good .goodtoto{
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    background-color: #5b5b5b;
+}
+.good .goodtoto ul{
+    display: inline-block;
+    margin: 20px 0 5px 160px;
+    border-bottom: 1px solid #979797; 
+}
+.good .goodtoto  li {
+    float: left;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.good .goodtoto li a {
+    color: #979797;
+    text-decoration: none;
+}
+.good .goodtoto li:hover a {
+    color: #FFFFFFCC;
+}
+.good .goodtoto p{
+    margin-left: 160px;
+    color: #adadad;
+}
+
+/* Thaotac - Mesenger - nuttop */
+.mesenger{
+    position: fixed;
+    right: 0;
+    top: 300px;    
+}
+.mesenger button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* nut reset top  */
+.nuttop{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    /* border-radius: 50%; */
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 20;
+}
+.hiennut{
+    visibility: visible;
+    bottom: 20px;
+    transition: 0.5s;
+}
+.nuttop:hover{
+    border-radius: 50%;
+    background-color:#446084; 
+    color: #fff;
+}
+.nuttop i{
+    padding: 3px;
+    font-size: 25px; 
+    color: #777777; 
+    cursor: pointer;
+}
+
+/* form dang nhap  */
+
+.form_dn{
+    width: 100%;
+    height: 100vh;
+    background-color: #5b5b5bad;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+.hiendn{
+    visibility: visible;
+    animation: abc 0.8s forwards;
+}
+.form_dn .clcol{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+    margin-top: -20px;
+    margin-right: -30px;
+    border-top-right-radius: 20px;
+    float: right;
+}
+@keyframes abc{
+    from{
+        padding-top: 5px;
+        opacity: 0;
+    }
+    to{
+        padding-top: 150px;
+        opacity: 1;
+    }
+}
+.form_login{
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    background-color: beige;
+    padding: 20px 30px;
+    font-size: 16px;
+    box-shadow: 0 8px 17px 3px rgb(66, 58, 58);
+    border-radius: 30px ;
+}
+.form_login h1 {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.form_login .form_group{
+    border-bottom: 1px solid #fff;
+    display: flex;
+    margin: 15px 30px 30px 30px;
+}
+.form_login .form_group i{
+    /* color: #fff; */
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.form_login .form_input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    flex-grow: 1;
+}
+.form_login .eye i{
+    padding-right: 0;
+    cursor: pointer;
+}
+.form_login .form_submit{
+    background: transparent;
+    border: 1px solid #130f0f;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 10px;
+}
+.form_submit:hover{
+    border: 1px solid #54a0ff;
+} 
+
+/* Popup  */
+.phu_desktop{
+    position: fixed;
+    background-color: rgba(78, 74, 74, 0.692);
+    height: 100%;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.brow_desktop{
+    /* position: fixed; */
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+}
+.brow_desktop i{
+    float: right;
+    right: -10px;
+    margin-right: -25px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+.brow_desktop img{
+    box-shadow: 0px 10px 15px 5px #979797;
+}
+
+/* Mode Messenger  */
+.mode_mesenger{
+    background-color: #7777776b;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+.mode_mesenger .clmax{
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    float: right;
+    margin-top: -30px;
+    margin-right: -30px;
+    border-top-right-radius: 10px;
+    padding: 3px;
+}
+.hien_mode{
+    visibility: visible;
+}
+.mode_basic{
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 8px 17px 3px rgb(66, 58, 58);
+    border-radius: 10px;
+    margin: 150px auto;
+    padding: 30px;
+    animation: zoom 2s forwards;
+
+}
+
+@keyframes zoom{
+    from{ 
+        opacity: 0.2;
+        transform: translateX(500px) scale(0.2);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+
+    }  
+}
+.mode_basic input{
+    outline: none;
+    display: block;
+    padding: 5px 10px;
+    margin: 15px auto;
+    width: 300px;
+    box-shadow: 0 5px 20px 0 rgb(250 66 81 / 20%);
+    border: 1px solid white;
+}
+.mode_basic .mode_there{
+    height: 100px;
+}
+.mode_basic .sub{
+    width: 100px;
+    border-radius: 20px;
+}
+.mode_basic .sub:hover{
+    background-color: rgb(250 66 81 / 10%);
+}
+
+/* Load trang loading website  */
+.loading_web{
+    background-color: rgb(51, 48, 48);
+    overflow:hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.colo{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #ccc;
+  top: 45%;
+  border-radius: 50%;
+}
+
+.colo:nth-child(1) {
+  background-color: #FF5460;
+  animation: move 2s infinite cubic-bezier(.2,.64,.81,.23);
+}
+.colo:nth-child(2) {
+  background-color: #FF9D84;
+  animation: move 2s 150ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+.colo:nth-child(3) {
+  background-color: #F0E797;
+  animation: move 2s 300ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+.colo:nth-child(4) {
+  background-color: #75B08A;
+  animation: move 2s 450ms infinite cubic-bezier(.2,.64,.81,.23);
+}
+
+@keyframes move {
+  0% {left: 0%;}
+  100% {left:100%;}
+}
+
+
+
+
